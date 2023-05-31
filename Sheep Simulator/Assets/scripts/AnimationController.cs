@@ -5,14 +5,10 @@ namespace Ursaanimation.CubicFarmAnimals
     public class AnimationController : MonoBehaviour
     {
         public Animator animator;
-        private string walkForwardAnimation = "walk_forward";
-        private string walkBackwardAnimation = "walk_backwards";
-        private string runForwardAnimation = "run_forward";
-        private string turn90LAnimation = "turn_90_L";
-        private string turn90RAnimation = "turn_90_R";
-        private string trotAnimation = "trot_forward";
-        private string sittostandAnimation = "sit_to_stand";
-        private string standtositAnimation = "stand_to_sit";
+
+        private readonly string _walkForwardAnimation = "walk_forward";
+        private readonly string _sittostandAnimation = "sit_to_stand";
+        private readonly string _standtositAnimation = "stand_to_sit";
 
         public float speed;
         void Start()
@@ -27,12 +23,12 @@ namespace Ursaanimation.CubicFarmAnimals
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 animator.SetBool("IsIdle", false);
-                animator.Play(sittostandAnimation);
+                animator.Play(_sittostandAnimation);
             }
             else if (Input.GetKeyDown(KeyCode.E))
             {
                 animator.SetBool("IsIdle", false);
-                animator.Play(standtositAnimation);
+                animator.Play(_standtositAnimation);
             }
         }
 
@@ -50,7 +46,7 @@ namespace Ursaanimation.CubicFarmAnimals
                 Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);  // Получаем новую ориентацию, смотрящую в сторону движения
                 transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, Time.deltaTime * 10f);  // Плавно поворачиваем персонажа в сторону движения
                
-                animator.Play(walkForwardAnimation);
+                animator.Play(_walkForwardAnimation);
             }
             else
             {
