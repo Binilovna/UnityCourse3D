@@ -57,7 +57,7 @@ public class SpikesController : MonoBehaviour
                 _isActive = true;
             }
 
-            yield return new WaitForSecondsRealtime(3);
+            yield return new WaitForSeconds(3);
         }
     }
 }

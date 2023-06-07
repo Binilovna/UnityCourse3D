@@ -7,65 +7,67 @@ using UnityEngine.Serialization;
 
 public class PlayerController : MonoBehaviour
 {
+    
     [SerializeField] private Rigidbody2D _rigidbody2D;
     [SerializeField] private int _velocity;
-    [SerializeField] private int _jumpForce;
     
-    private bool isRight;
-    private bool isLeft;
+    private bool _isRight;
+    private bool _isLeft;
     
-    private bool isJump;
-    private bool isGrounded;
+    private bool _isJump;
+    private bool _isGrounded;
     
     private int _extraJumps;
     public int extraJumpsValue;
-    
-    
+
+
+    private float _jumpForce;
+    private void Start()
+    {
+        _jumpForce = gameObject.GetComponent<PlayerManager>().jumpForce;
+    }
+
     void Update()
     {
-        isRight = false;
-        isLeft = false;
+        _isRight = false;
+        _isLeft = false;
         if (Input.GetKey(KeyCode.A))
         {
-            isLeft = true;
+            _isLeft = true;
         }
         else if(Input.GetKey(KeyCode.D))
         {
-            isRight = true;
+            _isRight = true;
         }
         
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            ResetExtraJumps();
-            if (isGrounded == true || _extraJumps > 0)
-            {
-                Jump();
-                isGrounded = false;
-                _extraJumps--;
-            }
+            _isJump = true;
         }
     }
 
     private void FixedUpdate()
     {
-        if (isRight == true)
+        if (_isRight == true)
         {
             Move(Vector2.right);
         }
-        else if(isLeft == true)
+        else if(_isLeft == true)
         {
             Move(Vector2.left);
         }
 
-        /*if (isJump == true)
+        if (_isJump == true)
         {
-            if (isGrounded == true)
+            _isJump = false;
+            ResetExtraJumps();
+            if (_isGrounded == true || _extraJumps > 0)
             {
                 Jump();
-                isGrounded = false;
-                isJump = false;
+                _isGrounded = false;
+                _extraJumps--;
             }
-        }*/
+        }
     }
 
     private void Move(Vector2 direction)
@@ -75,13 +77,12 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        Debug.Log("Jump");
-        _rigidbody2D.velocity = Vector2.up *_jumpForce;
+        _rigidbody2D.velocity = Vector2.up * _jumpForce;
     }
 
     private void ResetExtraJumps()
     {
-        if (isGrounded)
+        if (_isGrounded)
         {
             _extraJumps = extraJumpsValue;
         }
@@ -90,8 +91,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Ground"))
         {
-            Debug.Log("Ground");
-            isGrounded = true;
+            _isGrounded = true;
         }
     }
 }
