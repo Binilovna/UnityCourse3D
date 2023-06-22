@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 {
     
     [SerializeField] private Rigidbody2D _rigidbody2D;
-    [SerializeField] private int _velocity;
+    public int _velocity = 20;
     
     private bool _isRight;
     private bool _isLeft;
@@ -22,9 +22,12 @@ public class PlayerController : MonoBehaviour
 
 
     private float _jumpForce;
+
+    private Animator playerAnimator;
     private void Start()
     {
         _jumpForce = gameObject.GetComponent<PlayerManager>().jumpForce;
+        playerAnimator = gameObject.GetComponent<Animator>();
     }
 
     void Update()
@@ -34,16 +37,22 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             _isLeft = true;
+            gameObject.transform.localScale = new Vector3(-1, 1, 1);
         }
         else if(Input.GetKey(KeyCode.D))
         {
             _isRight = true;
+            gameObject.transform.localScale = new Vector3(1, 1, 1);
         }
         
         if (Input.GetKeyDown(KeyCode.Space))
         {
             _isJump = true;
         }
+        
+        playerAnimator.SetBool("IsRunning", _isRight || _isLeft ? true : false);
+        playerAnimator.SetBool("IsGrounded", _isGrounded);
+        
     }
 
     private void FixedUpdate()

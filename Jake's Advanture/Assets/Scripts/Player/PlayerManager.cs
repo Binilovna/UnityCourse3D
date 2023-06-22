@@ -13,8 +13,8 @@ public class PlayerManager : MonoBehaviour
     
     private void Awake()
     {
-        PlayerPrefs.GetInt("commonKeysCount_prefs", 0);
-        PlayerPrefs.GetInt("mainKeysCount_prefs", 0);
+        commonKeysCount = PlayerPrefs.GetInt("commonKeysCount_prefs", 0);
+        mainKeysCount = PlayerPrefs.GetInt("mainKeysCount_prefs", 0);
     }
 
     public void SaveProgress(int commonKeysCount, int mainKeysCount)

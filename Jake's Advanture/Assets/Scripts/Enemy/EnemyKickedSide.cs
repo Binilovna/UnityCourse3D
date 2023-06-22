@@ -12,8 +12,11 @@ public class EnemyKickedSide : MonoBehaviour
     private List<Collider2D> _enemyColliders;
     private float _reboundForce;
     private Vector2 _reboundDirection;
+    private Animator _animator;
     private void Start()
     {
+        _animator = gameObject.GetComponentInParent<Animator>();
+            
         _enemyColliders = enemy.gameObject.GetComponentsInChildren<Collider2D>().ToList();
         if (_enemyColliders == null) // для паука у которого коллайдер висит на нем а не в дочерних елементах
         {
@@ -35,7 +38,7 @@ public class EnemyKickedSide : MonoBehaviour
             foreach (Collider2D collider2D in _enemyColliders)
             {
                 Destroy(collider2D);
-            }
+            }      
         }
     }
 
@@ -45,6 +48,8 @@ public class EnemyKickedSide : MonoBehaviour
         {
             _reboundDirection = Vector2.up;
             _reboundForce = player.GetComponent<PlayerManager>().jumpForce / 3;
+            
+            _animator.Play("TurtleDeath");
         }
         else if(enemy.enemyType == Enemy.EnemyType.Crab)
         {

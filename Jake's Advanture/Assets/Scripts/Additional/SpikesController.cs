@@ -14,6 +14,12 @@ public class SpikesController : MonoBehaviour
     
     
     [SerializeField] private bool _isActive;
+
+    private EventsController _eventsController;
+    private void Awake()
+    {
+        _eventsController = GameObject.Find("EventsController").GetComponent<EventsController>();
+    }
     void Start()
     {
         StartCoroutine(ActivateSpikeByTime());
@@ -40,7 +46,7 @@ public class SpikesController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Destroy(other.gameObject);
+            _eventsController.OnPlayerDeath.Invoke();
         }
     }
 
