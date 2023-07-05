@@ -1,0 +1,245 @@
+Using pre-set license
+Built from '2021.3/release' branch; Version is '2021.3.27f1 (ca3ffb99bcc6) revision 13254651'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ru' Physical Memory: 7932 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.27f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Plavec/Desktop/homework_light_part1
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49859
+Successfully changed project path to: C:/Users/Plavec/Desktop/homework_light_part1
+C:/Users/Plavec/Desktop/homework_light_part1
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [11120] Host "[IP] 10.30.3.177 [Port] 0 [Flags] 2 [Guid] 2865839672 [EditorId] 2865839672 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-9BCJ8B1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [11120] Host "[IP] 10.30.3.177 [Port] 0 [Flags] 2 [Guid] 2865839672 [EditorId] 2865839672 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-9BCJ8B1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 103.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.27f1 (ca3ffb99bcc6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.27f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Plavec/Desktop/homework_light_part1/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics (ID=0x8a56)
+    Vendor:   Intel
+    VRAM:     3966 MB
+    Driver:   30.0.100.9805
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.27f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.27f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56164
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.27f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007648 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 304 ms
+Refreshing native plugins compatible for Editor in 102.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.437 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1438ms)
+		BeginReloadAssembly (121ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1177ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (137ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (920ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (464ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (102ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (281ms)
+				ProcessInitializeOnLoadMethodAttributes (71ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008910 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Plavec\Desktop\homework_light_part1\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Plavec\Desktop\homework_light_part1\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.556 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2558ms)
+		BeginReloadAssembly (400ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (57ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (66ms)
+		EndReloadAssembly (1777ms)
+			LoadAssemblies (256ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (726ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (105ms)
+			SetupLoadedEditorAssemblies (673ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (35ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (130ms)
+				ProcessInitializeOnLoadAttributes (464ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3052 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (46.3 KB). Loaded Objects now: 3519.
+Memory consumption went from 112.5 MB to 112.5 MB.
+Total: 4.898100 ms (FindLiveObjects: 0.459700 ms CreateObjectMapping: 0.279600 ms MarkObjects: 4.044500 ms  DeleteObjects: 0.112700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 62784.818495 seconds.
+  path: Assets/BasAssetStore/LowPolyVillage/Meshes/House/House_05.fbx
+  artifactKey: Guid(6f3c96e1c8fb50946899c94eb00593cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BasAssetStore/LowPolyVillage/Meshes/House/House_05.fbx using Guid(6f3c96e1c8fb50946899c94eb00593cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6356e3b597b10e4f0e7b61c3c99f5b9c') in 0.261517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/BasAssetStore/LowPolyVillage/Meshes/House/House_06.fbx
+  artifactKey: Guid(97f960fe472621d45837611e2d974afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BasAssetStore/LowPolyVillage/Meshes/House/House_06.fbx using Guid(97f960fe472621d45837611e2d974afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73f91df05e06d47de8dd4978cd72fc06') in 0.055357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/BasAssetStore/LowPolyVillage/Meshes/Field/Tomatoes_Field.fbx
+  artifactKey: Guid(0f160a855de8e42439bc0bf18c96a986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BasAssetStore/LowPolyVillage/Meshes/Field/Tomatoes_Field.fbx using Guid(0f160a855de8e42439bc0bf18c96a986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5a059f8b9d98625796ff2e0a10a86d2') in 0.062718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/BasAssetStore/LowPolyVillage/Meshes/House/House_07.fbx
+  artifactKey: Guid(d46525288bf26e14aba3e9514ab63fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BasAssetStore/LowPolyVillage/Meshes/House/House_07.fbx using Guid(d46525288bf26e14aba3e9514ab63fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da150fc3641622a144376a1f096e553e') in 0.053349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/BasAssetStore/LowPolyVillage/Meshes/Tree/Tree_03.fbx
+  artifactKey: Guid(c8c72a4430ea72949981c541f489d45c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BasAssetStore/LowPolyVillage/Meshes/Tree/Tree_03.fbx using Guid(c8c72a4430ea72949981c541f489d45c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2426cb2fa20ae180fcec5f99a9aeb2ef') in 0.048832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/BasAssetStore/LowPolyVillage/Meshes/Tree/Tree_02.fbx
+  artifactKey: Guid(8b3be99950d325f4c8998d0ff5a9136b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BasAssetStore/LowPolyVillage/Meshes/Tree/Tree_02.fbx using Guid(8b3be99950d325f4c8998d0ff5a9136b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30b73b72c592442e688d2eef011900b4') in 0.051785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/BasAssetStore/LowPolyVillage/Meshes/Field/Sunflower_Field.fbx
+  artifactKey: Guid(35d2920043365394181ceff41293baf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BasAssetStore/LowPolyVillage/Meshes/Field/Sunflower_Field.fbx using Guid(35d2920043365394181ceff41293baf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1272c9e13b5137ee15a60dc3440b4be5') in 0.050377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1936.685735 seconds.
+  path: Assets/New Lighting Settings.lighting
+  artifactKey: Guid(b7ede0132867dc6439e3fd40dac3e2ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Lighting Settings.lighting using Guid(b7ede0132867dc6439e3fd40dac3e2ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9544c2396b44564ecd0854949b90efec') in 0.014907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5906.302782 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79842766b460edbeab6a34051e857a80') in 0.005998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.659385 seconds.
+  path: Assets/New Material.mat
+  artifactKey: Guid(c35375bb8b3737f438db2ae05f77f209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Material.mat using Guid(c35375bb8b3737f438db2ae05f77f209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2889001726d2dbbd0d4e43f4baf3aad6') in 0.077121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.070705 seconds.
+  path: Assets/Materials
+  artifactKey: Guid(94044c0f7a376264ba5fe6a36e5c0c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(94044c0f7a376264ba5fe6a36e5c0c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6313c8b11257becd5db7a4d19fe6547') in 0.005966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.292420 seconds.
+  path: Assets/Materials/SphereMaterial.mat
+  artifactKey: Guid(94ddf80cf1a79cc49896bb19a87e8a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SphereMaterial.mat using Guid(94ddf80cf1a79cc49896bb19a87e8a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1031c2c3044289f272ea77401a3818ae') in 0.016507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 46.549530 seconds.
+  path: Assets/Materials/SphereMaterial.mat
+  artifactKey: Guid(94ddf80cf1a79cc49896bb19a87e8a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SphereMaterial.mat using Guid(94ddf80cf1a79cc49896bb19a87e8a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dabf464cfd02d8399c8831429019a45f') in 0.023607 seconds 
